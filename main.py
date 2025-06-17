@@ -70,7 +70,7 @@ def refresh_cookie():
 refresh_cookie()
 index = 1
 lastTime = int(time.time()) - 30
-while index <= READ_NUM:
+while index <= READ_NUM + random.randint(-50,10):  
     data.pop('s')
     data['b'] = random.choice(book)
     data['c'] = random.choice(chapter)
